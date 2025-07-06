@@ -1,0 +1,160 @@
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__label--required {
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: red;
+}
+
+.form__group-content {
+    width: 60%;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__input--text.form__input--name {
+    display: flex;
+    gap: 10px;
+    width: 600px;
+}
+
+.form__input--text.form__input--name input {
+    flex: 1 1 0;
+    box-sizing: border-box;
+}
+
+.form__input--radio {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.form__input--radio label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.form__input--radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__input--radio input[type="radio"]:checked {
+    background-color: #565656;
+    border-color: #565656; }
+
+
+.form__input--tel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form__input--tel input {
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 40px;
+    text-align: center;
+}
+
+.hyphen {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 18px;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__input--select {
+    text-align: left;
+}
