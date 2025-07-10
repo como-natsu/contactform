@@ -1,15 +1,18 @@
 .header {
-    background: #000;
+    background: #fff;
 }
 
 .header__inner {
+    display: flex;
     margin: 0 auto;
     padding: 20px 15px;
     max-width: 1230px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__logo {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -35,6 +38,7 @@
     border: 1px solid #ddd;
 }
 
+
 .confirm-table__inner {
     width: 100%;
 }
@@ -48,12 +52,12 @@
 }
 
 .confirm-table__text {
+    display: flex;
     padding: 15px;
     border-bottom: 1px solid #ddd;
 }
 
 .confirm-table__text input {
-    width: 100%;
     outline: none;
     border: none;
 }

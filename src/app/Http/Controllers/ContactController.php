@@ -29,6 +29,11 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
+      if($request->input('back') == 'back') {
+        return redirect('/')
+                    ->withInput();
+      }
+
       $tel = $request->input('tel1') . '-' . $request->input('tel2') . '-' . $request->input('tel3');
 
       $contact = $request->only(['last_name', 'first_name', 'gender', 'email', 'tel1', 'tel2', 'tel3', 'address', 'building', 'category_id', 'detail']);
@@ -42,3 +47,4 @@ class ContactController extends Controller
     }
 
 }
+
