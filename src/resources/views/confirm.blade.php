@@ -38,8 +38,8 @@
                         <tr class="confirm-table__row">
                             <th class="confirm-table__header">性別</th>
                             <td class="confirm-table__text">
-                            @if ($contact['gender'] === 'male')男性
-                            @elseif ($contact['gender'] === 'female')
+                            @if ($contact['gender'] === '1')男性
+                            @elseif ($contact['gender'] === '2')
                             女性
                             @else
                             その他
