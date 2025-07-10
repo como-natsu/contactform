@@ -25,7 +25,6 @@
 - Docker Compose v2.33.1
 
 ## ER図
-< - - - 作成したER図の画像 - - - >
 ![ER Diagram](./index.png)
 
 ## URL
