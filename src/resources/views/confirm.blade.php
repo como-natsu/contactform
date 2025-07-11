@@ -21,7 +21,7 @@
     <main>
         <div class="confirm__content">
             <div class="confirm__heading">
-                <h2>お問い合わせ内容確認</h2>
+                <h2>Confirm</h2>
             </div>
             <form class="form" action="/contacts" method="post">
                 @csrf
@@ -101,10 +101,8 @@
                     <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
 
                 <div class="form__button">
-                    <button class="form__button-submit" type="submit">送信</button>
-                </div>
-                <div class="form__button">
-                    <button class="form__button-submit" type="submit" name='back' value='back'>修正</button>
+                    <button class="form__button-submit__send" type="submit">送信</button>
+                    <button class="form__button-submit__revise" type="submit" name='back' value='back'>修正</button>
                 </div>
             </form>
         </div>

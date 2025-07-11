@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-    color: #000;
+    color: #756254;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -27,6 +27,7 @@
 .confirm__heading {
     margin-bottom: 40px;
     text-align: center;
+    color: #756254;
 }
 
 .form {
@@ -47,7 +48,8 @@
     padding: 15px;
     width: 20%;
     border-bottom: 1px solid #ddd;
-    background-color: #eee;
+    background-color: #cabfb8;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -73,17 +75,30 @@
 }
 
 .form__button {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
     text-align: center;
 }
 
-.form__button-submit {
+.form__button-submit__send {
     padding: 10px;
-    width: 30%;
+    width: 20%;
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: #756254;
     color: #fff;
+    cursor: pointer;
+}
+
+.form__button-submit__revise {
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #fff;;
+    color: #97877c;
     cursor: pointer;
 }

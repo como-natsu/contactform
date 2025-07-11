@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-    color: #000;
+    color: #756254;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
@@ -25,6 +25,7 @@
 }
 
 .contact-form__heading {
+    color: #756254;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -41,6 +42,10 @@
     margin-bottom: 15px;
 }
 
+.form__label--item {
+    color: #756254;
+}
+
 .form__label--required {
     margin-left: 5px;
     padding: 4px 6px;
@@ -51,6 +56,7 @@
 .form__group-content {
     width: 60%;
 }
+
 
 .form__input--text input,
 .form__input--textarea textarea {
@@ -64,10 +70,15 @@
 
 .form__input--text input {
     height: 40px;
+    background: #f7f7f7;
+    border: none;
 }
 
 .form__input--textarea textarea {
     height: 180px;
+    background:#f7f7f7;
+    border: none;
+    resize: none;
 }
 
 .form__input--text.form__input--name {
@@ -126,7 +137,16 @@
     box-sizing: border-box;
     height: 40px;
     text-align: center;
+    border: none;
 }
+
+select {
+    padding: 10px;
+    background: #f7f7f7;
+    border: none;
+    cursor: pointer;
+}
+
 
 .hyphen {
     display: inline-block;
@@ -135,9 +155,10 @@
 }
 
 .form__error {
-    height: 20px;
     color: #ff0000;
     text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .form__button {
@@ -146,11 +167,11 @@
 
 .form__button-submit {
     padding: 10px;
-    width: 30%;
+    width: 20%;
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background: #97877c;
     color: #fff;
     cursor: pointer;
 }
