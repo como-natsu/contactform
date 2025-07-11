@@ -52,9 +52,14 @@
 }
 
 .confirm-table__text {
-    display: flex;
+    width: 80%;
     padding: 15px;
     border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.confirm-table__text span:not(:last-child) {
+    margin-right: 0.5em;
 }
 
 .confirm-table__text input {

@@ -30,8 +30,7 @@
                         <tr class="confirm-table__row">
                             <th class="confirm-table__header">お名前</th>
                             <td class="confirm-table__text">
-                                <span>{{ $contact['last_name'] }}</span>
-                                <span>{{ $contact['first_name'] }}</span>
+                                <span>{{ $contact['last_name'] }}</span> <span>{{ $contact['first_name'] }}</span>
                             </td>
                         </tr>
 
@@ -88,13 +87,8 @@
                         </tr>
                     </table>
                 </div>
-                <div class="form__button">
-                    <button class="form__button-submit" type="submit">送信</button>
-                </div>
-                <div class="form__button">
-                    <form action="/contacts/confirm" method="post"></form>
-                    @csrf
-                    <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
+
+                <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
                     <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
                     <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
                     <input type="hidden" name="email" value="{{ $contact['email'] }}">
@@ -105,6 +99,11 @@
                     <input type="hidden" name="building" value="{{ $contact['building'] }}">
                     <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
                     <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
+
+                <div class="form__button">
+                    <button class="form__button-submit" type="submit">送信</button>
+                </div>
+                <div class="form__button">
                     <button class="form__button-submit" type="submit" name='back' value='back'>修正</button>
                 </div>
             </form>
