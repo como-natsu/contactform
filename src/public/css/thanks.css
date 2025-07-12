@@ -1,21 +1,39 @@
 
+.thanks-wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.thanks-wrapper::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    color: #1d1c1b0a;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .thanks__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 1230px;
 }
 
-.thanks-wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-
 .thanks__heading {
     margin-bottom: 40px;
-    text-align: center;
     color: #756254;
 }
 
