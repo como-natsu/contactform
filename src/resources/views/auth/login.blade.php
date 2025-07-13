@@ -7,6 +7,7 @@
     <title>Fashionably Late</title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
 </head>
 
 <body>
@@ -15,19 +16,19 @@
             <a class="header__logo" href="/">
                 FashionablyLate
             </a>
+            <nav class="header-nav-wrapper" >
+                <ul class="header-nav">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="/register">register</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="header-nav">
-                <li class="header-nav__item">
-                    <a class="header-nav__link" href="/register">register</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <div class="login-form__content">
         <div class="login-form__heading">
-            <h2>ログイン</h2>
+            <h2>Login</h2>
         </div>
         <form class="form" action="/login" method="post">
             @csrf
@@ -37,7 +38,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="email" name="email" value="{{ old('email') }}" />
+                        <input type="email" name="email" placeholder="例：test@example.com" value="{{ old('email') }}" />
                     </div>
                     <div class="form__error">
                         @error('email')
@@ -52,7 +53,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="password" name="password" />
+                        <input type="password" name="password" placeholder="例：coachtech1106"/>
                     </div>
                     <div class="form__error">
                         @error('password')

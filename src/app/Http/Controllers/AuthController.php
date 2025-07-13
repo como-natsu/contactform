@@ -12,11 +12,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function index()
-    {
-    return view('admin');
-    }
-
     public function register()
     {
         return view('auth.register');
@@ -46,6 +41,10 @@ class AuthController extends Controller
             $request->session()->regenerate();
             return redirect('/admin');
         }
+
+        return back()->withErrors([
+        'email' => 'メールアドレスまたはパスワードが正しくありません。',
+        ])->onlyInput('email');
 
     }
 
